@@ -26,5 +26,6 @@ module "vpc" {
     # ALB Controller 실습 때 사용
     "kubernetes.io/role/internal-elb" = "1",
     "kubernetes.io/cluster/${local.cluster_name}" = "shared"
+    "atlantis" = "true",
   }
 }
